@@ -16,7 +16,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowReactApp",
         policy =>
         {
-            policy.WithOrigins("ServerLinkApp")
+            policy.WithOrigins("https://portfolio-vite-bkvr.onrender.com")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
